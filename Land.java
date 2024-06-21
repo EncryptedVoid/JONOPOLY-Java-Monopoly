@@ -25,7 +25,7 @@ public class Land extends Asset {
     public float getConstructionPrice() { return constructionPrice; }
 
     public boolean sufficientBalance(Player player) {
-        return player.getBalance() >= constructionPrice;
+        return player.getBankBalance() >= constructionPrice;
     }
 
     public boolean canBuildHotel() {
